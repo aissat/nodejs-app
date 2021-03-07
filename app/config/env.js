@@ -1,10 +1,17 @@
 const env = {
-  database: 'd19it75c9j04j2',
-  username: 'lxknzbbcpmmdyl',
-  password: '3f1a281360fc9c4a5c42f35efeb94643064caa4293c74b136e885cc7c3d57beb',
-  host: 'ec2-54-163-245-64.compute-1.amazonaws.com',
+  database: 'd9e9vf40ij8444',
+  username: 'xvhnjorbruabdc',
+  password: '05a027f22870b66ca9b46295e09df92daac3bcd4aa33b511ddc0997c4c6ef0dc',
+  host: 'ec2-54-198-252-9.compute-1.amazonaws.com',
   port: 5432,
   dialect: 'postgres',
+  logging: console.log,
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false 
+    }
+  },
   pool: {
 	  max: 5,
 	  min: 0,
@@ -12,5 +19,5 @@ const env = {
 	  idle: 10000
   }
 };
- 
+
 module.exports = env;
